@@ -96,3 +96,10 @@ body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--b
   .filters{width:100%}
   .contact-grid{flex-direction:column}
 }
+
+/* Cart page styles */
+#cart-body td{padding:.6rem 0}
+#cart-table th, #cart-table td{padding:.6rem 0;border-bottom:1px solid #f3f4f6}
+#cart-summary .btn{padding:.5rem 1rem}
+.qty-decr, .qty-incr, .remove-btn{background:#fff;border:1px solid #e5e7eb;padding:4px 8px;border-radius:6px;cursor:pointer}
+.qty{margin:0 8px}

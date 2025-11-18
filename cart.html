@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cart — Mamakaram Saree House</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Mamakaram Saree House</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="sarees.html">Sarees</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Your Cart</h1>
+    <div id="cart-area">
+      <p id="empty-msg">Your cart is empty. <a href="sarees.html">Browse sarees</a>.</p>
+      <table id="cart-table" style="width:100%;display:none;border-collapse:collapse">
+        <thead>
+          <tr style="text-align:left;border-bottom:1px solid #eee"><th>Item</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+      </table>
+      <div id="cart-summary" style="margin-top:1rem;display:none">
+        <div style="display:flex;justify-content:flex-end;align-items:center;gap:1rem">
+          <div style="font-weight:700">Total: <span id="cart-total">₹0</span></div>
+          <a id="checkout-btn" class="btn primary" href="#">Checkout via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Mamakaram Saree House</strong>
+      </div>
+      <div>
+        <div>Contact: <a href="tel:+916281720436">+91 6281720436</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Cart page script — reads from localStorage 'msc_cart'
+    function getCart(){ try { return JSON.parse(localStorage.getItem('msc_cart')||'[]'); } catch(e){ return []; } }
+    function saveCart(cart){ localStorage.setItem('msc_cart', JSON.stringify(cart)); if(window.renderCartCount) window.renderCartCount(); }
+
+    function renderCart(){
+      const cart = getCart();
+      const empty = document.getElementById('empty-msg');
+      const table = document.getElementById('cart-table');
+      const body = document.getElementById('cart-body');
+      const summary = document.getElementById('cart-summary');
+      if(!cart || cart.length===0){ empty.style.display='block'; table.style.display='none'; summary.style.display='none'; return; }
+      empty.style.display='none'; table.style.display='table'; summary.style.display='block'; body.innerHTML='';
+      let total = 0;
+      cart.forEach((it, idx)=>{
+        const tr = document.createElement('tr');
+        const subtotal = (it.price||0) * (it.qty||1);
+        total += subtotal;
+        tr.innerHTML = `<td>${it.name}</td><td>₹${it.price}</td><td><button data-idx="${idx}" class="qty-decr">-</button> <span class="qty">${it.qty}</span> <button data-idx="${idx}" class="qty-incr">+</button></td><td>₹${subtotal}</td><td><button data-idx="${idx}" class="remove-btn">Remove</button></td>`;
+        body.appendChild(tr);
+      });
+      document.getElementById('cart-total').textContent = '₹' + total;
+      // attach handlers
+      document.querySelectorAll('.qty-decr').forEach(b=> b.addEventListener('click', (e)=>{ const i=parseInt(e.currentTarget.dataset.idx); changeQty(i, -1); }));
+      document.querySelectorAll('.qty-incr').forEach(b=> b.addEventListener('click', (e)=>{ const i=parseInt(e.currentTarget.dataset.idx); changeQty(i, +1); }));
+      document.querySelectorAll('.remove-btn').forEach(b=> b.addEventListener('click', (e)=>{ const i=parseInt(e.currentTarget.dataset.idx); removeItem(i); }));
+      // checkout
+      document.getElementById('checkout-btn').addEventListener('click', (e)=>{ e.preventDefault(); checkout(); });
+    }
+
+    function changeQty(idx, delta){ const cart = getCart(); if(!cart[idx]) return; cart[idx].qty = Math.max(1, (cart[idx].qty||1) + delta); saveCart(cart); renderCart(); }
+    function removeItem(idx){ const cart = getCart(); cart.splice(idx,1); saveCart(cart); renderCart(); }
+
+    function checkout(){ const cart = getCart(); if(!cart.length){ alert('Cart is empty'); return; }
+      const lines = cart.map(i=>`${i.qty} x ${i.name} — ₹${i.price} each`).join('%0A');
+      const total = cart.reduce((s,i)=> s + (i.price||0)*(i.qty||1), 0);
+      const msg = encodeURIComponent(`Hi I want to place an order:%0A${lines}%0A%0ATotal: ₹${total}`);
+      const url = `https://wa.me/6281720436?text=${msg}`;
+      window.open(url, '_blank');
+    }
+
+    // init
+    document.addEventListener('DOMContentLoaded', ()=>{ renderCart(); });
+  </script>
+</body>
+</html>

@@ -40,10 +40,8 @@ function renderCartCount(){
 }
 
 function openCartPreview(){
-  const cart = getCart();
-  if(!cart.length){ alert('Cart is empty'); return; }
-  const lines = cart.map(i=>`${i.qty} x ${i.name} — ₹${i.price}`).join('\n');
-  alert('Cart items:\n' + lines);
+  // Navigate to cart page for full cart management
+  window.location.href = 'cart.html';
 }
 
 function showToast(msg){
