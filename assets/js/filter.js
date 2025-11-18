@@ -110,7 +110,11 @@ function renderCards(list){
 
   list.forEach(s => {
     const card = document.createElement('div'); card.className = 'card';
-    const img = document.createElement('img'); img.src = s.image; img.alt = s.name;
+    const img = document.createElement('img');
+    img.src = s.image || 'assets/images/saree-placeholder.svg';
+    img.alt = s.name;
+    img.loading = 'lazy';
+    img.onerror = () => { img.onerror = null; img.src = 'assets/images/saree-placeholder.svg'; };
     const body = document.createElement('div'); body.className = 'card-body';
     const title = document.createElement('h4'); title.textContent = s.name;
     const price = document.createElement('div'); price.className = 'price'; price.textContent = '₹' + s.price;

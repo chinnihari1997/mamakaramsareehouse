@@ -37,7 +37,7 @@
     "price": 8999,
     "category": "Uppada",
     "colors": ["Purple","Gold"],
-    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+    "image": "assets/images/saree-placeholder.svg"
   },
   {
     "id": 6,
