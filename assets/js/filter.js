@@ -118,6 +118,17 @@ function renderCards(list){
     const colors = document.createElement('div'); colors.className = 'colors';
     colors.innerHTML = s.colors.map(c=>'<span class="color-pill">'+c+'</span>').join(' ');
     body.appendChild(title); body.appendChild(price); body.appendChild(meta); body.appendChild(colors);
+    // Order button
+    const orderBtn = document.createElement('a');
+    orderBtn.className = 'btn order-btn';
+    orderBtn.textContent = 'Order';
+    const waText = encodeURIComponent(`Hi I want to order this saree:\nName: ${s.name}\nID: ${s.id}\nPrice: ₹${s.price}\nCategory: ${s.category}\nColors: ${s.colors.join(', ')}`);
+    orderBtn.href = `https://wa.me/6281720436?text=${waText}`;
+    orderBtn.target = '_blank';
+    orderBtn.rel = 'noopener';
+    // prevent card click from opening modal when ordering
+    orderBtn.addEventListener('click', (e)=>{ e.stopPropagation(); });
+    body.appendChild(orderBtn);
     card.appendChild(img); card.appendChild(body);
     card.addEventListener('click', ()=>{ window.openSareeModal(s); });
     container.appendChild(card);
