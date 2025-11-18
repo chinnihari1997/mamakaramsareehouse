@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "name": "Mamakaram Saree 1",
+    "price": 2499,
+    "category": "Kanchipuram",
+    "colors": ["Red","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 2,
+    "name": "Mamakaram Saree 2",
+    "price": 3499,
+    "category": "Pochampally",
+    "colors": ["Blue","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 3,
+    "name": "Mamakaram Saree 3",
+    "price": 1999,
+    "category": "Banarasi",
+    "colors": ["Green","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 4,
+    "name": "Mamakaram Saree 4",
+    "price": 1299,
+    "category": "Cotton",
+    "colors": ["Pink","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 5,
+    "name": "Mamakaram Saree 5",
+    "price": 8999,
+    "category": "Uppada",
+    "colors": ["Purple","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 6,
+    "name": "Mamakaram Saree 6",
+    "price": 5599,
+    "category": "Silk",
+    "colors": ["Red","Blue"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 7,
+    "name": "Mamakaram Saree 7",
+    "price": 2999,
+    "category": "Half-Saree",
+    "colors": ["Orange","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 8,
+    "name": "Mamakaram Saree 8",
+    "price": 2199,
+    "category": "Kanchipuram",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 9,
+    "name": "Mamakaram Saree 9",
+    "price": 1799,
+    "category": "Pochampally",
+    "colors": ["Red","Pink"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 10,
+    "name": "Mamakaram Saree 10",
+    "price": 4599,
+    "category": "Banarasi",
+    "colors": ["Black","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 11,
+    "name": "Mamakaram Saree 11",
+    "price": 1399,
+    "category": "Cotton",
+    "colors": ["White","Blue"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 12,
+    "name": "Mamakaram Saree 12",
+    "price": 7799,
+    "category": "Uppada",
+    "colors": ["Maroon","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 13,
+    "name": "Mamakaram Saree 13",
+    "price": 4999,
+    "category": "Silk",
+    "colors": ["Green","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 14,
+    "name": "Mamakaram Saree 14",
+    "price": 2599,
+    "category": "Half-Saree",
+    "colors": ["Yellow","Red"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 15,
+    "name": "Mamakaram Saree 15",
+    "price": 3299,
+    "category": "Kanchipuram",
+    "colors": ["Pink","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 16,
+    "name": "Mamakaram Saree 16",
+    "price": 2899,
+    "category": "Pochampally",
+    "colors": ["Blue","Yellow"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 17,
+    "name": "Mamakaram Saree 17",
+    "price": 1599,
+    "category": "Banarasi",
+    "colors": ["Purple","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 18,
+    "name": "Mamakaram Saree 18",
+    "price": 1199,
+    "category": "Cotton",
+    "colors": ["Green","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 19,
+    "name": "Mamakaram Saree 19",
+    "price": 8999,
+    "category": "Uppada",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 20,
+    "name": "Mamakaram Saree 20",
+    "price": 5999,
+    "category": "Silk",
+    "colors": ["Red","Black"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 21,
+    "name": "Mamakaram Saree 21",
+    "price": 2199,
+    "category": "Half-Saree",
+    "colors": ["Orange","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 22,
+    "name": "Mamakaram Saree 22",
+    "price": 2799,
+    "category": "Kanchipuram",
+    "colors": ["Gold","Green"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 23,
+    "name": "Mamakaram Saree 23",
+    "price": 3199,
+    "category": "Pochampally",
+    "colors": ["Pink","Blue"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 24,
+    "name": "Mamakaram Saree 24",
+    "price": 4099,
+    "category": "Banarasi",
+    "colors": ["Red","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 25,
+    "name": "Mamakaram Saree 25",
+    "price": 1299,
+    "category": "Cotton",
+    "colors": ["Blue","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 26,
+    "name": "Mamakaram Saree 26",
+    "price": 6599,
+    "category": "Uppada",
+    "colors": ["Green","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 27,
+    "name": "Mamakaram Saree 27",
+    "price": 4899,
+    "category": "Silk",
+    "colors": ["Purple","Pink"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 28,
+    "name": "Mamakaram Saree 28",
+    "price": 2399,
+    "category": "Half-Saree",
+    "colors": ["Gold","Orange"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 29,
+    "name": "Mamakaram Saree 29",
+    "price": 2799,
+    "category": "Kanchipuram",
+    "colors": ["Black","Red"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 30,
+    "name": "Mamakaram Saree 30",
+    "price": 1999,
+    "category": "Pochampally",
+    "colors": ["White","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 31,
+    "name": "Mamakaram Saree 31",
+    "price": 3599,
+    "category": "Banarasi",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 32,
+    "name": "Mamakaram Saree 32",
+    "price": 1499,
+    "category": "Cotton",
+    "colors": ["Pink","Yellow"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 33,
+    "name": "Mamakaram Saree 33",
+    "price": 9999,
+    "category": "Uppada",
+    "colors": ["Maroon","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 34,
+    "name": "Mamakaram Saree 34",
+    "price": 5399,
+    "category": "Silk",
+    "colors": ["Red","Green"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 35,
+    "name": "Mamakaram Saree 35",
+    "price": 2499,
+    "category": "Half-Saree",
+    "colors": ["Blue","Pink"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 36,
+    "name": "Mamakaram Saree 36",
+    "price": 2699,
+    "category": "Kanchipuram",
+    "colors": ["Yellow","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 37,
+    "name": "Mamakaram Saree 37",
+    "price": 3099,
+    "category": "Pochampally",
+    "colors": ["Purple","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 38,
+    "name": "Mamakaram Saree 38",
+    "price": 4199,
+    "category": "Banarasi",
+    "colors": ["Black","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 39,
+    "name": "Mamakaram Saree 39",
+    "price": 1199,
+    "category": "Cotton",
+    "colors": ["Green","Blue"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 40,
+    "name": "Mamakaram Saree 40",
+    "price": 8799,
+    "category": "Uppada",
+    "colors": ["Red","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 41,
+    "name": "Mamakaram Saree 41",
+    "price": 4699,
+    "category": "Silk",
+    "colors": ["Pink","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 42,
+    "name": "Mamakaram Saree 42",
+    "price": 2299,
+    "category": "Half-Saree",
+    "colors": ["White","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 43,
+    "name": "Mamakaram Saree 43",
+    "price": 1999,
+    "category": "Kanchipuram",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 44,
+    "name": "Mamakaram Saree 44",
+    "price": 3099,
+    "category": "Pochampally",
+    "colors": ["Orange","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 45,
+    "name": "Mamakaram Saree 45",
+    "price": 3899,
+    "category": "Banarasi",
+    "colors": ["Red","Black"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 46,
+    "name": "Mamakaram Saree 46",
+    "price": 1299,
+    "category": "Cotton",
+    "colors": ["Pink","Purple"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 47,
+    "name": "Mamakaram Saree 47",
+    "price": 7399,
+    "category": "Uppada",
+    "colors": ["Green","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 48,
+    "name": "Mamakaram Saree 48",
+    "price": 5599,
+    "category": "Silk",
+    "colors": ["Black","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 49,
+    "name": "Mamakaram Saree 49",
+    "price": 2499,
+    "category": "Half-Saree",
+    "colors": ["Red","Pink"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 50,
+    "name": "Mamakaram Saree 50",
+    "price": 2699,
+    "category": "Kanchipuram",
+    "colors": ["Yellow","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 51,
+    "name": "Mamakaram Saree 51",
+    "price": 3099,
+    "category": "Pochampally",
+    "colors": ["Blue","Green"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 52,
+    "name": "Mamakaram Saree 52",
+    "price": 1899,
+    "category": "Banarasi",
+    "colors": ["Gold","Maroon"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 53,
+    "name": "Mamakaram Saree 53",
+    "price": 1399,
+    "category": "Cotton",
+    "colors": ["White","Black"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 54,
+    "name": "Mamakaram Saree 54",
+    "price": 6499,
+    "category": "Uppada",
+    "colors": ["Purple","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 55,
+    "name": "Mamakaram Saree 55",
+    "price": 5199,
+    "category": "Silk",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 56,
+    "name": "Mamakaram Saree 56",
+    "price": 2299,
+    "category": "Half-Saree",
+    "colors": ["Green","Yellow"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 57,
+    "name": "Mamakaram Saree 57",
+    "price": 2799,
+    "category": "Kanchipuram",
+    "colors": ["Red","Blue"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 58,
+    "name": "Mamakaram Saree 58",
+    "price": 3399,
+    "category": "Pochampally",
+    "colors": ["Pink","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 59,
+    "name": "Mamakaram Saree 59",
+    "price": 4299,
+    "category": "Banarasi",
+    "colors": ["White","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 60,
+    "name": "Mamakaram Saree 60",
+    "price": 1199,
+    "category": "Cotton",
+    "colors": ["Blue","Pink"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 61,
+    "name": "Mamakaram Saree 61",
+    "price": 7999,
+    "category": "Uppada",
+    "colors": ["Red","Green"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 62,
+    "name": "Mamakaram Saree 62",
+    "price": 4599,
+    "category": "Silk",
+    "colors": ["Gold","Black"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 63,
+    "name": "Mamakaram Saree 63",
+    "price": 2399,
+    "category": "Half-Saree",
+    "colors": ["Orange","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 64,
+    "name": "Mamakaram Saree 64",
+    "price": 2899,
+    "category": "Kanchipuram",
+    "colors": ["Pink","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 65,
+    "name": "Mamakaram Saree 65",
+    "price": 3199,
+    "category": "Pochampally",
+    "colors": ["Green","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 66,
+    "name": "Mamakaram Saree 66",
+    "price": 3699,
+    "category": "Banarasi",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 67,
+    "name": "Mamakaram Saree 67",
+    "price": 1299,
+    "category": "Cotton",
+    "colors": ["White","Yellow"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 68,
+    "name": "Mamakaram Saree 68",
+    "price": 6999,
+    "category": "Uppada",
+    "colors": ["Pink","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 69,
+    "name": "Mamakaram Saree 69",
+    "price": 5299,
+    "category": "Silk",
+    "colors": ["Black","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 70,
+    "name": "Mamakaram Saree 70",
+    "price": 2599,
+    "category": "Half-Saree",
+    "colors": ["Green","Red"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 71,
+    "name": "Mamakaram Saree 71",
+    "price": 2799,
+    "category": "Kanchipuram",
+    "colors": ["Gold","Blue"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 72,
+    "name": "Mamakaram Saree 72",
+    "price": 3099,
+    "category": "Pochampally",
+    "colors": ["Pink","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 73,
+    "name": "Mamakaram Saree 73",
+    "price": 3999,
+    "category": "Banarasi",
+    "colors": ["Red","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 74,
+    "name": "Mamakaram Saree 74",
+    "price": 1399,
+    "category": "Cotton",
+    "colors": ["Blue","Green"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 75,
+    "name": "Mamakaram Saree 75",
+    "price": 7599,
+    "category": "Uppada",
+    "colors": ["Gold","Maroon"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 76,
+    "name": "Mamakaram Saree 76",
+    "price": 5899,
+    "category": "Silk",
+    "colors": ["Purple","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 77,
+    "name": "Mamakaram Saree 77",
+    "price": 2299,
+    "category": "Half-Saree",
+    "colors": ["White","Pink"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 78,
+    "name": "Mamakaram Saree 78",
+    "price": 2699,
+    "category": "Kanchipuram",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 79,
+    "name": "Mamakaram Saree 79",
+    "price": 3399,
+    "category": "Pochampally",
+    "colors": ["Red","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 80,
+    "name": "Mamakaram Saree 80",
+    "price": 4199,
+    "category": "Banarasi",
+    "colors": ["Black","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 81,
+    "name": "Mamakaram Saree 81",
+    "price": 1199,
+    "category": "Cotton",
+    "colors": ["Yellow","Pink"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 82,
+    "name": "Mamakaram Saree 82",
+    "price": 6999,
+    "category": "Uppada",
+    "colors": ["Green","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 83,
+    "name": "Mamakaram Saree 83",
+    "price": 4999,
+    "category": "Silk",
+    "colors": ["Red","Blue"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 84,
+    "name": "Mamakaram Saree 84",
+    "price": 2499,
+    "category": "Half-Saree",
+    "colors": ["Purple","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 85,
+    "name": "Mamakaram Saree 85",
+    "price": 2799,
+    "category": "Kanchipuram",
+    "colors": ["White","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 86,
+    "name": "Mamakaram Saree 86",
+    "price": 3199,
+    "category": "Pochampally",
+    "colors": ["Blue","Yellow"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 87,
+    "name": "Mamakaram Saree 87",
+    "price": 3899,
+    "category": "Banarasi",
+    "colors": ["Pink","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 88,
+    "name": "Mamakaram Saree 88",
+    "price": 1399,
+    "category": "Cotton",
+    "colors": ["Green","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 89,
+    "name": "Mamakaram Saree 89",
+    "price": 7999,
+    "category": "Uppada",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 90,
+    "name": "Mamakaram Saree 90",
+    "price": 5599,
+    "category": "Silk",
+    "colors": ["Black","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 91,
+    "name": "Mamakaram Saree 91",
+    "price": 2299,
+    "category": "Half-Saree",
+    "colors": ["Red","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 92,
+    "name": "Mamakaram Saree 92",
+    "price": 2699,
+    "category": "Kanchipuram",
+    "colors": ["Pink","Green"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 93,
+    "name": "Mamakaram Saree 93",
+    "price": 3099,
+    "category": "Pochampally",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 94,
+    "name": "Mamakaram Saree 94",
+    "price": 3999,
+    "category": "Banarasi",
+    "colors": ["White","Red"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 95,
+    "name": "Mamakaram Saree 95",
+    "price": 1299,
+    "category": "Cotton",
+    "colors": ["Yellow","Blue"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 96,
+    "name": "Mamakaram Saree 96",
+    "price": 6899,
+    "category": "Uppada",
+    "colors": ["Gold","Maroon"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 97,
+    "name": "Mamakaram Saree 97",
+    "price": 5199,
+    "category": "Silk",
+    "colors": ["Green","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 98,
+    "name": "Mamakaram Saree 98",
+    "price": 2399,
+    "category": "Half-Saree",
+    "colors": ["Pink","White"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 99,
+    "name": "Mamakaram Saree 99",
+    "price": 2799,
+    "category": "Kanchipuram",
+    "colors": ["Blue","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  },
+  {
+    "id": 100,
+    "name": "Mamakaram Saree 100",
+    "price": 3599,
+    "category": "Pochampally",
+    "colors": ["Red","Gold"],
+    "image": "https://res.cloudinary.com/dl4zrwccq/image/upload/v1759251846/3_fe8ebw.png"
+  }
+]
