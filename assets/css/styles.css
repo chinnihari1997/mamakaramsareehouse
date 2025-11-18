@@ -48,6 +48,15 @@ body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--b
 .order-btn{display:inline-block;margin-top:.6rem;padding:.45rem .7rem;background:#25D366;color:#fff;border-radius:6px;text-decoration:none}
 .card .order-btn{float:right}
 
+/* Color swatches and cart */
+.color-btn{display:inline-block;width:20px;height:20px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,0.06);margin-right:6px;vertical-align:middle;cursor:pointer}
+.color-btn.small{width:16px;height:16px}
+.color-btn[title]{outline:0}
+.card-actions{display:flex;gap:.5rem;align-items:center;margin-top:.6rem}
+.cart-btn{background:transparent;border:0;cursor:pointer;padding:.3rem;border-radius:6px;display:inline-flex;align-items:center;gap:.4rem}
+.cart-icon{width:20px;height:20px;display:inline-block}
+.cart-count{background:var(--accent);color:#fff;border-radius:999px;padding:2px 6px;font-size:.75rem;margin-left:4px}
+
 /* Modal */
 .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);z-index:50}
 .modal.show{display:flex}

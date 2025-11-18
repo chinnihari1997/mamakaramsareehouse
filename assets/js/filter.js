@@ -116,9 +116,25 @@ function renderCards(list){
     const price = document.createElement('div'); price.className = 'price'; price.textContent = '₹' + s.price;
     const meta = document.createElement('div'); meta.className = 'meta'; meta.textContent = s.category;
     const colors = document.createElement('div'); colors.className = 'colors';
-    colors.innerHTML = s.colors.map(c=>'<span class="color-pill">'+c+'</span>').join(' ');
+    // Create color swatches as clickable buttons
+    s.colors.forEach(c=>{
+      const btn = document.createElement('button'); btn.className = 'color-btn'; btn.title = c;
+      // basic color name -> hex mapping
+      const map = { red:'#e11d48', pink:'#f472b6', gold:'#d4af37', blue:'#3b82f6', white:'#ffffff', black:'#111827', green:'#10b981', purple:'#7c3aed', orange:'#fb923c', yellow:'#facc15' };
+      const key = c.trim().toLowerCase();
+      const col = map[key] || '#cccccc';
+      btn.style.background = col;
+      btn.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        // open WhatsApp prefilled with chosen color
+        const waText = encodeURIComponent(`Hi I want to order this saree:\nName: ${s.name}\nID: ${s.id}\nPrice: ₹${s.price}\nCategory: ${s.category}\nColor: ${c}`);
+        window.open(`https://wa.me/6281720436?text=${waText}`, '_blank');
+      });
+      colors.appendChild(btn);
+    });
     body.appendChild(title); body.appendChild(price); body.appendChild(meta); body.appendChild(colors);
-    // Order button
+    // Actions: order + cart
+    const actions = document.createElement('div'); actions.className = 'card-actions';
     const orderBtn = document.createElement('a');
     orderBtn.className = 'btn order-btn';
     orderBtn.textContent = 'Order';
@@ -126,9 +142,16 @@ function renderCards(list){
     orderBtn.href = `https://wa.me/6281720436?text=${waText}`;
     orderBtn.target = '_blank';
     orderBtn.rel = 'noopener';
-    // prevent card click from opening modal when ordering
     orderBtn.addEventListener('click', (e)=>{ e.stopPropagation(); });
-    body.appendChild(orderBtn);
+
+    const cartBtn = document.createElement('button'); cartBtn.className='cart-btn';
+    cartBtn.innerHTML = `<svg class="cart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1" fill="#222"/><circle cx="18" cy="20" r="1" fill="#222"/></svg>`;
+    const cartCountSpan = document.createElement('span'); cartCountSpan.className='cart-count'; cartCountSpan.style.marginLeft='6px'; cartCountSpan.textContent='+';
+    cartBtn.appendChild(cartCountSpan);
+    cartBtn.addEventListener('click', (e)=>{ e.stopPropagation(); if(window.addToCart) window.addToCart(s); else alert('Add to cart: ' + s.name); });
+
+    actions.appendChild(orderBtn); actions.appendChild(cartBtn);
+    body.appendChild(actions);
     card.appendChild(img); card.appendChild(body);
     card.addEventListener('click', ()=>{ window.openSareeModal(s); });
     container.appendChild(card);
