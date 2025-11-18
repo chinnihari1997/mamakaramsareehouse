@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — Mamakaram Saree House</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Mamakaram Saree House</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="sarees.html">Sarees</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html" class="active">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container admin-page">
+    <h1>Admin (Mock)</h1>
+    <p>This is a mock admin UI for previewing a new saree card locally (no server-side persistence).</p>
+
+    <form id="admin-form">
+      <label>Name<br><input id="sname" type="text" placeholder="Saree name"></label><br>
+      <label>Price<br><input id="sprice" type="number" placeholder="Price"></label><br>
+      <label>Category<br><input id="scat" type="text" placeholder="Category"></label><br>
+      <label>Colors (comma-separated)<br><input id="scolors" type="text" placeholder="Red,Gold"></label><br>
+      <label>Image URL<br><input id="simage" type="text" placeholder="assets/images/example.jpg"></label><br>
+      <button type="button" id="preview-btn" class="btn">Preview</button>
+    </form>
+
+    <h2>Preview</h2>
+    <div id="preview-card" class="card"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Mamakaram Saree House</strong>
+      </div>
+      <div>
+        <div>Contact: <a href="tel:+916281720436">+91 6281720436</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('preview-btn').addEventListener('click', ()=>{
+      const name = document.getElementById('sname').value || 'Sample Saree';
+      const price = document.getElementById('sprice').value || '0';
+      const category = document.getElementById('scat').value || 'Category';
+      const colors = (document.getElementById('scolors').value || '').split(',').map(s=>s.trim()).filter(Boolean);
+      const image = document.getElementById('simage').value || 'assets/images/.gitkeep';
+      const container = document.getElementById('preview-card');
+      container.innerHTML = '';
+      const img = document.createElement('img'); img.src = image; img.alt = name; img.style.maxWidth='100%';
+      const body = document.createElement('div'); body.className='card-body';
+      const title = document.createElement('h4'); title.textContent = name;
+      const pr = document.createElement('div'); pr.className='price'; pr.textContent = '₹'+price;
+      const meta = document.createElement('div'); meta.className='meta'; meta.textContent = category;
+      const cs = document.createElement('div'); cs.className='colors'; cs.innerHTML = colors.map(c=>'<span class="color-pill">'+c+'</span>').join(' ');
+      body.appendChild(title); body.appendChild(pr); body.appendChild(meta); body.appendChild(cs);
+      container.appendChild(img); container.appendChild(body);
+    });
+  </script>
+
+  <div id="whatsapp-float"></div>
+</body>
+</html>
