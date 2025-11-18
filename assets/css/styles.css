@@ -1,0 +1,85 @@
+:root{
+  --bg:#f8fafc; --card:#ffffff; --muted:#6b7280; --accent:#b5651d; --primary:#7b3f00;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--bg);color:#222}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.logo{font-weight:700;color:var(--primary);text-decoration:none}
+.main-nav a{margin-left:1rem;color:#333;text-decoration:none}
+.main-nav a.active{color:var(--accent)}
+.hero{padding:2rem 0;background:linear-gradient(90deg,#fff 60%, #fff);}
+.hero-inner{display:flex;gap:2rem;align-items:center}
+.hero-text{flex:1}
+.hero-text h1{margin:0 0 .5rem 0;font-size:2rem}
+.tagline{color:var(--muted);margin-bottom:1rem}
+.hero-image img{max-width:100%;border-radius:8px}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:6px;background:#eee;color:#333;text-decoration:none;border:none;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff}
+.categories{padding:2rem 0}
+.category-strip{display:flex;flex-wrap:wrap;gap:.5rem}
+.category{padding:.5rem .75rem;background:#fff;border-radius:999px;border:1px solid #eee;text-decoration:none;color:#444}
+.about-preview{padding:2rem 0}
+.site-footer{background:#fff;border-top:1px solid #eee;padding:1rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+
+/* Sarees page */
+.sarees-grid-wrap{display:flex;gap:1rem;padding:1rem 0}
+.filters{width:260px;background:transparent;padding:1rem;border-radius:8px}
+.filters h3{margin-top:0}
+.filter-block{margin-bottom:1rem}
+.price-range input{width:48%;display:inline-block}
+.sarees-list{flex:1}
+.sarees-header{display:flex;justify-content:space-between;align-items:center}
+.sarees-controls{display:flex;gap:1rem;align-items:center}
+.sort select{padding:.3rem;border-radius:6px}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.card{background:var(--card);border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(30,41,59,0.06)}
+.card img{width:100%;height:260px;object-fit:cover}
+.card-body{padding:.75rem}
+.card-body h4{margin:0 0 .25rem 0;font-size:1rem}
+.price{color:var(--accent);font-weight:700}
+.meta{color:var(--muted);font-size:.9rem;margin-top:.25rem}
+.colors{margin-top:.5rem}
+.color-pill{display:inline-block;padding:.25rem .5rem;border-radius:12px;background:#f3f4f6;margin-right:.25rem;font-size:.8rem}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);z-index:50}
+.modal.show{display:flex}
+.modal-content{background:#fff;padding:1rem;border-radius:8px;max-width:700px;width:95%;position:relative}
+.modal-close{position:absolute;top:8px;right:8px;background:transparent;border:0;font-size:1.6rem;cursor:pointer}
+
+/* Admin */
+.admin-form{max-width:700px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(30,41,59,0.04)}
+.form-row{margin-bottom:0.75rem}
+.form-row label{display:block;color:var(--muted);font-size:.9rem;margin-bottom:.25rem}
+.form-row input{width:100%;padding:.5rem;border:1px solid #e5e7eb;border-radius:6px}
+.form-actions{display:flex;gap:.5rem}
+
+#preview-card .card{max-width:200px}
+
+/* Contact */
+.contact-grid{display:flex;gap:1rem}
+.contact-card{background:#fff;padding:1rem;border-radius:8px;flex:1}
+.map-frame iframe{width:100%;height:360px;border:0;border-radius:8px}
+
+/* Pagination styles */
+.pagination{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-top:1rem}
+.pagination .btn{padding:.4rem .6rem;border-radius:6px;background:#fff;border:1px solid #e5e7eb}
+.pagination .page-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pagination .ellipsis{padding:.4rem .6rem;color:var(--muted)}
+
+/* WhatsApp float */
+#whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:60}
+#whatsapp-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:#25D366;border-radius:50%;box-shadow:0 8px 18px rgba(0,0,0,0.12);color:#fff;text-decoration:none;font-size:22px}
+
+/* Utility */
+.container h1,.container h2{color:var(--primary)}
+
+@media(max-width:900px){
+  .hero-inner{flex-direction:column}
+  .sarees-grid-wrap{flex-direction:column}
+  .filters{width:100%}
+  .contact-grid{flex-direction:column}
+}

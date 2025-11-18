@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sarees — Mamakaram Saree House</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/filter.js"></script>
+  <script defer src="assets/js/modal.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Mamakaram Saree House</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="sarees.html" class="active">Sarees</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container sarees-page">
+    <div class="sarees-grid-wrap">
+      <aside class="filters">
+        <h3>Filters</h3>
+        <div class="filter-block">
+          <label>Search</label>
+          <input id="search-input" type="search" placeholder="Search by name...">
+        </div>
+        <div class="filter-block">
+          <label>Category</label>
+          <div id="category-list"></div>
+        </div>
+        <div class="filter-block">
+          <label>Price</label>
+          <div class="price-range">
+            <input id="price-min" type="number" placeholder="Min" min="0">
+            <input id="price-max" type="number" placeholder="Max" min="0">
+          </div>
+        </div>
+        <div class="filter-block">
+          <label>Colors</label>
+          <div id="color-list"></div>
+        </div>
+        <div class="filter-actions">
+          <button id="apply-filters" class="btn">Apply</button>
+          <button id="reset-filters" class="btn">Reset</button>
+        </div>
+      </aside>
+
+      <section class="sarees-list">
+        <div class="sarees-header">
+          <h2>All Sarees</h2>
+          <div class="sarees-controls">
+            <div id="results-count"></div>
+            <div class="sort">
+              <label for="sort-select">Sort:</label>
+              <select id="sort-select">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low → High</option>
+                <option value="price-desc">Price: High → Low</option>
+                <option value="name-asc">Name: A → Z</option>
+                <option value="name-desc">Name: Z → A</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="cards" class="cards-grid"></div>
+        <div class="pagination" id="pagination-controls" aria-hidden="true"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="saree-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Mamakaram Saree House</strong>
+      </div>
+      <div>
+        <div>Contact: <a href="tel:+916281720436">+91 6281720436</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="whatsapp-float"></div>
+
+</body>
+</html>
